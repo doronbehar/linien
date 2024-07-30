@@ -23,7 +23,7 @@ from linien_common.common import FilterType
 from linien_gui.config import UI_PATH
 from linien_gui.ui.spin_box import CustomDoubleSpinBox, CustomDoubleSpinBoxNoSign
 from linien_gui.utils import get_linien_app_instance, param2ui
-from PyQt5 import QtWidgets, uic
+from PyQt6 import QtWidgets, uic
 
 
 class SpectroscopyPanel(QtWidgets.QWidget):
@@ -36,8 +36,8 @@ class SpectroscopyPanel(QtWidgets.QWidget):
     manualFilterWidget: QtWidgets.QWidget
     signalOffsetSpinBox: CustomDoubleSpinBox
 
-    def __init__(self, *args):
-        super(SpectroscopyPanel, self).__init__(*args)
+    def __init__(self, *args, **kwargs):
+        super(SpectroscopyPanel, self).__init__(*args, **kwargs)
         uic.loadUi(UI_PATH / "spectroscopy_panel.ui", self)
         self.app = get_linien_app_instance()
         self.app.connection_established.connect(self.on_connection_established)

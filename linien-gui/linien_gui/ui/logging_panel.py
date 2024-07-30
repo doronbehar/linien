@@ -21,8 +21,8 @@ from linien_client.remote_parameters import RemoteParameters
 from linien_common.influxdb import InfluxDBCredentials
 from linien_gui.config import UI_PATH
 from linien_gui.utils import get_linien_app_instance
-from PyQt5 import QtWidgets, uic
-from PyQt5.QtCore import pyqtSignal
+from PyQt6 import QtWidgets, QtGui, uic
+from PyQt6.QtCore import pyqtSignal
 
 START_LOG_BUTTON_TEXT = "Start Logging"
 STOP_LOG_BUTTON_TEXT = "Stop Logging"
@@ -147,11 +147,11 @@ class LoggedParametersMenu(QtWidgets.QMenu):
         param_dict = dict(sorted(param_dict.items()))  # sort alphabetically
         for name, param in param_dict.items():
             if param.loggable:
-                action = QtWidgets.QAction(name, parent=self, checkable=True)  # type: ignore[call-overload] # noqa: E501
+                action = QtGui.QAction(name, parent=self, checkable=True)  # type: ignore[call-overload] # noqa: E501
                 action.setChecked(param.log)
                 self.addAction(action)
         self.triggered.connect(self.on_item_selected)
 
-    def on_item_selected(self, action: QtWidgets.QAction) -> None:
+    def on_item_selected(self, action: QtGui.QAction) -> None:
         param_name = action.text()
         self.item_clicked.emit(param_name, action.isChecked())

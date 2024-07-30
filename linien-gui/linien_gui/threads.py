@@ -31,7 +31,7 @@ from linien_client.exceptions import (
 )
 from linien_client.remote_parameters import RemoteParameter
 from linien_common.communication import RestorableParameterValues
-from PyQt5.QtCore import QObject, QThread, pyqtSignal
+from PyQt6.QtCore import QObject, QThread, pyqtSignal
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)

@@ -21,7 +21,7 @@ from linien_gui.config import UI_PATH
 from linien_gui.ui.lock_status_panel import LockStatusPanel
 from linien_gui.ui.spin_box import CustomSpinBox
 from linien_gui.utils import get_linien_app_instance, param2ui
-from PyQt5 import QtWidgets, uic
+from PyQt6 import QtWidgets, uic
 
 
 class LockingPanel(QtWidgets.QWidget):

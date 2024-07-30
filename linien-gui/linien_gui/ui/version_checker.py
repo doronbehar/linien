@@ -21,7 +21,7 @@ import logging
 import linien_gui
 import requests
 from packaging import version
-from PyQt5.QtCore import QThread, pyqtSignal
+from PyQt6.QtCore import QThread, pyqtSignal
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)

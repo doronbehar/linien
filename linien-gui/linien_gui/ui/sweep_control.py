@@ -17,7 +17,7 @@
 
 import superqt
 from linien_gui.utils import get_linien_app_instance
-from PyQt5 import QtCore, QtWidgets
+from PyQt6 import QtCore, QtWidgets
 
 
 class SweepControlWidget(QtWidgets.QWidget):

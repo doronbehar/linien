@@ -5,11 +5,11 @@
 , setuptools
 , requests
 , pyqtgraph
-, pyqt5
+, pyqt6
 , superqt
 , click
 , linien-client
-, qt5
+, qt6
 , makeDesktopItem
 , copyDesktopItems
 , graphicsmagick
@@ -24,20 +24,20 @@ buildPythonPackage rec {
 
   nativeBuildInputs = [
     setuptools
-    qt5.wrapQtAppsHook
+    qt6.wrapQtAppsHook
     copyDesktopItems
     graphicsmagick
   ];
 
   buildInputs = [
-    qt5.qtbase
-    qt5.qtwayland
+    qt6.qtbase
+    qt6.qtwayland
   ];
 
   propagatedBuildInputs = [
     requests
     pyqtgraph
-    pyqt5
+    pyqt6
     superqt
     click
     linien-client

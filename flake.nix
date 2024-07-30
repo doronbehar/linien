@@ -44,7 +44,7 @@
         paramiko
         plumbum
         pylpsd
-        pyqt5
+        pyqt6
         pyqtgraph
         pyrp3
         pytest

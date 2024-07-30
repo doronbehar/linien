@@ -20,7 +20,7 @@ from typing import Optional
 
 from linien_client.device import Device, add_device, update_device
 from linien_gui.config import UI_PATH
-from PyQt5 import QtWidgets, uic
+from PyQt6 import QtWidgets, uic
 
 
 class NewDeviceDialog(QtWidgets.QDialog):

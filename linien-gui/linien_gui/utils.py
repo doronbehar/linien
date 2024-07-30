@@ -20,8 +20,8 @@ import os
 from typing import TYPE_CHECKING, Any, Callable, Tuple
 
 from linien_client.remote_parameters import RemoteParameter
-from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import (
+from PyQt6 import QtWidgets
+from PyQt6.QtWidgets import (
     QCheckBox,
     QComboBox,
     QDoubleSpinBox,

@@ -34,8 +34,8 @@ from linien_gui.dialogs import (
 from linien_gui.threads import ConnectionThread
 from linien_gui.ui.new_device_dialog import NewDeviceDialog
 from linien_gui.utils import get_linien_app_instance, set_window_icon
-from PyQt5 import QtCore, QtWidgets, uic
-from PyQt5.QtWidgets import QListWidget, QPushButton
+from PyQt6 import QtCore, QtWidgets, uic
+from PyQt6.QtWidgets import QListWidget, QPushButton
 
 
 class DeviceManager(QtWidgets.QMainWindow):

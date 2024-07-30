@@ -27,8 +27,8 @@ from linien_gui.ui.device_manager import DeviceManager
 from linien_gui.ui.main_window import MainWindow
 from linien_gui.ui.psd_window import PSDWindow
 from linien_gui.ui.version_checker import VersionCheckerThread
-from PyQt5 import QtWidgets
-from PyQt5.QtCore import pyqtSignal
+from PyQt6 import QtWidgets
+from PyQt6.QtCore import pyqtSignal
 from pyqtgraph.Qt import QtCore
 
 sys.path += [str(UI_PATH)]

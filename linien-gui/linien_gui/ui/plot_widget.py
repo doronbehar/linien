@@ -34,8 +34,8 @@ from linien_common.common import (
 )
 from linien_gui.config import DEFAULT_PLOT_RATE_LIMIT, N_COLORS, Color
 from linien_gui.utils import get_linien_app_instance
-from PyQt5 import QtGui, QtWidgets
-from PyQt5.QtCore import pyqtSignal
+from PyQt6 import QtGui, QtWidgets
+from PyQt6.QtCore import pyqtSignal
 from pyqtgraph.Qt import QtCore
 
 # NOTE: this is required for using a pen_width > 1. There is a bug though that causes

@@ -19,8 +19,8 @@
 from datetime import datetime
 
 from linien_gui.utils import color_to_hex, get_linien_app_instance
-from PyQt5 import QtCore, QtWidgets
-from PyQt5.QtCore import pyqtSignal
+from PyQt6 import QtCore, QtWidgets
+from PyQt6.QtCore import pyqtSignal
 
 
 class PSDTableWidget(QtWidgets.QTableWidget):

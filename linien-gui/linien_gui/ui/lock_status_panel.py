@@ -17,7 +17,7 @@
 # along with Linien.  If not, see <http://www.gnu.org/licenses/>.
 
 from linien_gui.utils import get_linien_app_instance, param2ui
-from PyQt5 import QtCore, QtWidgets
+from PyQt6 import QtCore, QtWidgets
 
 
 class LockStatusPanel(QtWidgets.QWidget):

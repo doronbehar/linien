@@ -20,7 +20,7 @@ from linien_common.common import MHz, Vpp
 from linien_gui.config import UI_PATH
 from linien_gui.ui.spin_box import CustomDoubleSpinBoxNoSign
 from linien_gui.utils import get_linien_app_instance, param2ui
-from PyQt5 import QtWidgets, uic
+from PyQt6 import QtWidgets, uic
 
 
 class OptimizationPanel(QtWidgets.QWidget):

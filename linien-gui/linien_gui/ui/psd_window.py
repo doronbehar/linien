@@ -29,7 +29,7 @@ from linien_gui.utils import (
     param2ui,
     set_window_icon,
 )
-from PyQt5 import QtWidgets, uic
+from PyQt6 import QtWidgets, uic
 
 
 class PSDWindow(QtWidgets.QMainWindow):
